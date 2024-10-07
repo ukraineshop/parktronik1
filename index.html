@@ -373,10 +373,11 @@ src="https://www.facebook.com/tr?id=887932556139495&ev=PageView&noscript=1"
                         // Отримуємо значення полів форми
                         var name = document.querySelector('input[name="name"]').value;
                         var phone = document.querySelector('input[name="phone"]').value;
+			     var product = document.querySelector('select[name="product"]').value; // Отримуємо вибір продукту
                         
                      
                         // Формуємо повідомлення
-                        var message = `Нове замовлення (парктронік):\nІм'я та прізвище: ${name}\nТелефон: ${phone};`
+                        var message = `Нове замовлення (парктронік):\nІм'я та прізвище: ${name}\nТелефон: ${phone} \nПродукт: ${product}`;
                      
                         // Ваш токен та ID чату
                         var token = '7513550921:AAE2Mh-p-RcBt2QtTBTU7vJKS9OJfw8I2HA';
@@ -413,7 +414,11 @@ src="https://www.facebook.com/tr?id=887932556139495&ev=PageView&noscript=1"
 				
 				<input class="field" type="text" name="name" placeholder="Введіть Ваше ім'я та прізвище">
 				<input class="field" type="tel" name="phone" placeholder="Введіть Ваш телефон" required="required" inputmode="text">
-				
+				<select id="product" name="product" class="field" required>
+        <option value="" disabled selected>Оберіть опцію:</option>
+        <option value="8 датчиків - 999 грн">Парктронік на 8 датчиків - 999 грн</option>
+        <option value="4 датчика - 519 грн">Парктронік на 4 датчика - 519 грн</option>
+    </select>
 				<button class="button">Замовити зі знижкою </button>
 				
 			
