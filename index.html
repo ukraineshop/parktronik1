@@ -401,11 +401,10 @@ src="https://www.facebook.com/tr?id=2477676169104915&ev=PageView&noscript=1"
                             // Після успішної відправки, одразу перенаправляємо на сторінку "Дякую"
                             window.location.href = "./зарядка_files/thank_you_page.html"; 
                         })
-			     .catch((error) => {
-                        console.error('Error:', error);
-                        alert('Помилка при відправленні замовлення.');
-                    });
-                      
+			      .catch((error) => {
+                            console.error('Error:', error);
+                            alert('Помилка при відправленні замовлення.');
+                        });
                     });
                 });
               </script>
